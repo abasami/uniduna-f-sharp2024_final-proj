@@ -15,6 +15,7 @@ This will help you the next time you buy coffee.
 * Register and Search
 * Counting the number of the lists
 * The displayed content changes depending on the conditions.
+* show date of registered
 
 **<span style="color:#cc0000;font-size:150%;">You can check the below URL.</span>** [LINK](https://abasami.github.io/uniduna-f-sharp2024_final-proj/wwwroot/)  
 **https://abasami.github.io/uniduna-f-sharp2024_final-proj/wwwroot/**  
