@@ -22,6 +22,7 @@ This will help you the next time you buy coffee.
 
 ### Point
 The displayed content changes depending on the conditions.  I used IF statement.
+Thus, There are the same numberes of explanations as the types of options. 
 ![img-finalPrj-02](https://github.com/abasami/uniduna-f-sharp2024_final-proj/assets/165396658/27e697e4-3804-4b69-9a64-958190ce82a7)
 
 
