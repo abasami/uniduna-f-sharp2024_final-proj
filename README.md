@@ -15,8 +15,8 @@ This will help you the next time you buy coffee.
 * Counting the number of the lists
 * The displayed content changes depending on the conditions.
 
-**<span style="color:#cc0000;font-size:150%;">You can check the below URL.</span>** [LINK](https://abasami.github.io/secondAssignment/wwwroot/)  
-**https://abasami.github.io/secondAssignment/wwwroot/**  
+**<span style="color:#cc0000;font-size:150%;">You can check the below URL.</span>** [LINK](https://abasami.github.io/uniduna-f-sharp2024_final-proj/wwwroot/)  
+**https://abasami.github.io/uniduna-f-sharp2024_final-proj/wwwroot/**  
 
 ![img-finalPrj-01](https://github.com/abasami/uniduna-f-sharp2024_final-proj/assets/165396658/b6ff9ede-a56a-4873-b645-0278da9a479d)
 
