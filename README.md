@@ -32,10 +32,10 @@ Thus, there are the same numberes of explanations as the types of options.
 
 ### Tha program creation process
 
-1 Create SPA project
+1.  Create SPA project
 ```
 \(Folder Name)>dotnet new websharper-spa -lang F# -n (ProjectName)
 ```
-2 I changed the code.  And I editted HTML and CSS.
+2.  I changed the code.  And I editted HTML and CSS.
 
 
