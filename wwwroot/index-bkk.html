@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>book0423</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="Content/book0423.css" />
+        <style>
+            /* Don't show the not-yet-loaded templates */
+            /* input field and list field */
+            .Title {
+                border: 1px solid;
+                width: 400px;
+                padding: 2px 8px;
+            }
+
+            .Author {
+                border: 1px solid;
+                width: 250px;
+                padding: 2px 8px;
+            }
+
+            .Published {
+                border: 1px solid;
+                width: 60px;
+                padding: 2px 8px;
+            }
+            /* REGISTERED BOOKS */
+            caption {
+                font-weight: bold;
+                font-size: x-large;
+            }
+
+            table.list td, table.list th {
+                border: 1px solid lightgray;
+                padding: 2px 8px;
+            }
+
+            table.list th {
+                background-color: orange;
+                text-align: center;
+            }
+
+            table.list tr:nth-child(even) {
+                background-color: lightyellow;
+            }
+            /* message display area */
+            input.Msg {
+                border: none;
+                width: 100%;
+                color: orangered;
+                font-size: larger;
+            }
+
+            [ws-template], [ws-children-template] {
+                display: none;
+            }
+        </style>
+        <script type="text/javascript" src="Content/book0423.head.js"></script>
+    </head>
+    <body>
+        <div ws-children-template="Main">
+            <div>
+                <input class="Title" placeholder="Book Title" ws-var="Title" />
+                <input class="Author" placeholder="Author" ws-var="Author" />
+                <input class="Published" type="number" ws-var="Published" />
+                <div>
+                    <!-- buttons for register and search -->
+                    <button ws-onclick="Reister">Register</button>
+                    <button ws-onclick="Search">Search</button>
+                </div>
+                <!-- message field -->
+                <input class="Msg" ws-var="Msg" readonly />
+            </div>
+            <br />
+            <table class="list" wh-hole="Table">
+                <caption ws-hole="Caption"></caption>
+                <thead>
+                    <tr>
+                        <th class="Title">Book Title</th>
+                        <th class="Author">Author</th>
+                        <th class="Published">Year</th>
+                        <th class="Flag"></th>
+                    </tr>
+                </thead>
+                <tbody ws-hole="Data">
+                    <!-- repleat for each books -->
+                    <tr ws-template="Row">
+                        <td class="Title" ws-hole="Title"></td>
+                        <td class="Author" ws-hole="Author"></td>
+                        <td class="Published" style="text-align:center" ws-hole="Published"></td>
+                        <!-- flag for registered -->
+                        <td class="Flag" ws-hole="Flag"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h1 style="text-align:center; color:white; background-color: darkorange">BOOK REGISTRATION AND BOOK SEARCH</h1>
+        <p> Takahiro FUJiWARA - DQ4WX0</p>
+        <div id="main"></div>
+        <script type="text/javascript" src="Content/book0423.min.js"></script>
+    </body>
+</html>

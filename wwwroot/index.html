@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MidPrjFuji</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="main-style.css" />
+    <style>
+        /* Don't show the not-yet-loaded templates */
+        /*[ws-template], [ws-children-template] { display: none; }*/
+        /* Don't show the not-yet-loaded templates */
+        /* input field and list field */
+
+    </style>
+    <script type="text/javascript" src="Content/MidPrjFuji.head.js"></script>
+</head>
+<body>
+    <div class="wrap">
+
+        <img src="Content/cafe.png" width="200" style="float:right;" />
+        <h1>MY FAVORITE COFFEE LIST</h1>
+        <p class="note">Let's Register your Favorite Coofee!  This will help you the next time you buy coffee.</p>
+        <h2>How to Use the List</h2>
+        <div style="margin-left:40px;line-height:90%;">
+            <p><span style="font-weight:bold; color:darkgreen;">STEP1:</span> Select "REGISTER" or "SEARCH".</p>
+            <p><span style="font-weight: bold; color: darkgreen;">STEP2:</span> Select the coffee name.</p>
+            <p><span style="font-weight: bold; color: darkgreen;">STEP3:</span> Input your note about the coffee.</p>
+            <p><span style="font-weight: bold; color: darkgreen;">STEP4:</span> Select your favorite level from 1 to 5 (5 is the best).</p>
+            <p><span style="font-weight: bold; color: darkgreen;">STEP5:</span> Click the button.</p>
+        </div>
+
+        <div ws-children-template="Main">
+
+            <div class="button-container">
+
+
+                <input type="radio" id="registerOption" name="option" checked>
+                <label for="registerOption" style="margin-right:60px;">REGISTER</label>
+                <input type="radio" id="searchOption" name="option">
+                <label for="searchOption">SEARCH</label>
+                <br />
+
+                <label>Coffee: </label>
+                <!--<input placeholder="Coffee Name" ws-var="CoffeeName" />-->
+                <select name="CoffeeName" ws-var="CoffeeName">
+                    <option value="" selected style="color:gray;">- Please Select -</option>
+                    <option value="Blue Mountain">Blue Mountain</option>
+                    <option value="Java Coffee">Java Coffee</option>
+                    <option value="Kilimanjaro">Kilimanjaro</option>
+                    <option value="Kona">Kona</option>
+                    <option value="Mandheling">Mandheling</option>
+                    <option value="Mocha">Mocha</option>
+                    <option value="Toraja">Toraja</option>
+                </select>
+                <label>My Note: </label>
+                <input placeholder="input your notes" ws-var="MyNote" />
+                <label>Level: </label>
+                <input type="number" value="1" max="5" min="1" ws-var="Level" />
+                <!--<select name="Level" ws-var="Level">
+            <option value="-1" selected style="color:gray;">- Please Select -</option>
+            <option value="1">Level:1</option>
+            <option value="2">Level:2</option>
+            <option value="3">Level:3</option>
+            <option value="4">Level:4</option>
+            <option value="5">Level:5</option>
+        </select>-->
+                <!-- buttons for register and search -->
+                <button id="registerButton" class="button" ws-onclick="Reister">Register</button>
+                <button id="searchButton" class="button hidden" ws-onclick="Search">Search</button>
+
+
+            </div>
+            <!-- message field -->
+            <input class="Msg" ws-var="Msg" readonly />
+            <div class="result" ws-hole="Result"></div>
+
+            <br />
+            <div>
+                <table class="list" wh-hole="Table" width="1000px">
+                    <caption ws-hole="Caption"></caption>
+                    <thead>
+                        <tr>
+                            <th>Coffee Name</th>
+                            <th>My Note</th>
+                            <th>Level</th>
+                            <th>Registration Date</th>
+                        </tr>
+                    </thead>
+                    <tbody ws-hole="Data">
+                        <!-- repleat for each books -->
+                        <tr ws-template="Row">
+                            <td ws-hole="CoffeeName"></td>
+                            <td ws-hole="MyNote"></td>
+                            <td style="text-align:center" ws-hole="Level"></td>
+                            <!-- flag for registered -->
+                            <td ws-hole="RegisteredDate"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="width:1000px;">
+                    <h3 style="text-align:center; font-weight:bold; font-size:120%;">=== DESCRIPTION ===</h3>
+                    <div class="recipe" ws-hole="Recipe"></div>
+                    <img src="Content/cafe-cup.png" />
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div id="main"></div>
+
+    </div>
+
+
+
+
+    <script type="text/javascript" src="Content/MidPrjFuji.min.js"></script>
+
+
+</body>
+</html>

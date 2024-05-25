@@ -1,0 +1,140 @@
+.wrap {
+    background-color: #ffffff;
+    width: 1200px;
+    height: 1600px;
+    margin: 10px;
+    font-size: 120%;
+    font-family: system-ui;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px
+}
+
+
+h1 {
+    color: darkgreen;
+    border-left: solid 10px darkgreen;
+    padding-left: 10px;
+}
+h2 {
+    font-size:150%;font-weight:bold;
+}
+input{
+    height:30px;
+    font-size:110%;
+    margin:15px 4px;
+}
+select {
+    height: 40px;
+    font-size: 120%;
+    width:200px;
+    text-align:center;
+}
+
+button {
+    height: 45px;
+    font-size: 120%;
+    padding: 2px 10px;
+    background-color: darkgreen;
+    color: #ffffff;
+    width: 600px;
+    display: block;
+    margin: auto;
+}
+table{
+    margin-top:5px;
+
+}
+td,th{
+    border: solid 1px #666666;
+
+}
+
+
+/* REGISTERED */
+caption {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+
+
+table.list td,th {
+    border: 1px solid lightgray;
+    padding: 2px 8px;
+}
+
+table.list th {
+    background-color:darkgreen;
+    text-align: center;
+    color:#ffffff;
+}
+
+table.list tr:nth-child(even) {
+    background-color:blanchedalmond;
+}
+/* message display area */
+input.Msg {
+    border: none;
+    width: 100%;
+    color: orangered;
+    font-size: larger;
+}
+
+[ws-template], [ws-children-template] {
+    display: none;
+}
+
+    
+.note {
+    /*background-color:darksalmon;*/
+    font-size: 120%;
+    padding: 20px;
+    margin: 2px 10px;
+    width: 1000px;
+      
+}
+.result {
+    color: darkgreen;
+    font-size: 120%;
+    margin: 10px;
+}
+
+.recipe {
+    /*background-color:darksalmon;*/
+    font-size: 120%;
+    padding: 20px;
+    margin: 20px 0px;
+    width: 980px;
+    border: 3px solid darksalmon;
+}
+    .recipe::first-line {
+        font-weight: bold;
+        color: darkgreen;
+    }
+
+
+
+
+.button-container{
+    background-color:burlywood;
+    width:1000px;
+    padding:10px;
+}
+label{
+    color:darkgreen;
+    font-size:120%;
+    font-weight:bold;
+}
+
+
+
+    /* ボタンの表示非表示 */
+.button {
+    display: none;
+}
+
+#registerOption:checked ~ #registerButton,
+#searchOption:checked ~ #searchButton {
+    display: block;
+}
