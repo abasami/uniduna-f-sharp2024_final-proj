@@ -20,7 +20,8 @@ This will help you the next time you buy coffee.
 
 ![img-finalPrj-01](https://github.com/abasami/uniduna-f-sharp2024_final-proj/assets/165396658/b6ff9ede-a56a-4873-b645-0278da9a479d)
 
-The displayed content changes depending on the conditions.
+### Point
+The displayed content changes depending on the conditions.  I used IF statement.
 ![img-finalPrj-02](https://github.com/abasami/uniduna-f-sharp2024_final-proj/assets/165396658/27e697e4-3804-4b69-9a64-958190ce82a7)
 
 
